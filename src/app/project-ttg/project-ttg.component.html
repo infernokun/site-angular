@@ -1,0 +1,23 @@
+<section class="video-container">
+  <video id="background-video" src="/assets/clem.mp4" playsinline autoplay muted loop>
+  </video>
+
+  <div class="overlay-content">
+    <div class="title">
+      <h1>Project TTG</h1>
+    </div>
+    <p>This is a Resident Evil <i>(remakes)</i> inspired project.</p>
+    <!-- Add other content as needed -->
+  </div>
+
+</section>
+
+<section class="picture-container" *ngFor="let picture of pictures">
+  <div class="title">
+    <h1>{{picture.title}}</h1>
+  </div>
+  <div class="project-description">
+    <p>{{picture.description}}</p>
+  </div>
+  <img src="{{picture.location}}" alt="">
+</section>
