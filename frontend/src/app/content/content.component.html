@@ -1,0 +1,219 @@
+<body>
+  <section class="section projects" id="projects">
+    <div class="title">
+      <h1>Projects</h1>
+    </div>
+    <div #content class="content">
+      <div class="project-item">
+        <img class="project-image imdb" src="/assets/images/project_imdb_search.png" alt="">
+        <div class="project-title">
+          <h1>OMDB Movie Searcher App (Android)</h1>
+        </div>
+        <div class="project-description">
+          <p>Simple android application that queries the OMDB database and searches for movies by title.
+            Demonstrates my use of JSON in order to take data and display some cool stuff.</p>
+          <a class="project-button src-code"
+            href="https://github.com/infernokun/IMDB-Searcher-Mobile-App-Project-">Source Code</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img class="project-image login" src="/assets/images/project_php_login.png" alt="">
+        <div class="project-title">
+          <h1>PHP Login Site with 2 User Types & Database</h1>
+        </div>
+        <div class="project-description">
+          <p>A website for a university that has user logins for a student and instructor. Registration is
+            available too. Students are able to see courses, enroll in courses, and drop courses.
+            Instructors are able to see the students in their courses and change their grades. Sessions
+            are included and nice MYSQL database stuff. Instructor Code is ABC123.</p>
+          <a class="project-button src-code" href="https://github.com/infernokun/UniProject-simple-registerlogin"
+            target="_blank">Source
+            Code</a>
+          <a class="project-button demo" href="https://login-register-php.herokuapp.com/" target="_blank">Demo</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <a href="https://github.com/infernokun/IMDB-Searcher-Mobile-App-Project-" target="_blank">
+          <img class="project-image tab" src="/assets/images/project_tab_firefox.png" alt="">
+          <div class="project-title">
+            <h1>Tab Title Viewer (Firefox Extension)</h1>
+          </div>
+        </a>
+        <div class="project-description">
+          <p>I have always had issues with having too many tabs open in Firefox. Never found a way to
+            manage tabs better and consistently see how many tabs I have open. So, I learned how to make
+            a simple Firefox extension to close tabs, show the title of the page, and see the total
+            amount of tabs I have open. Not the most stylized, but it works great for me.</p>
+          <a class="project-button src-code" href="https://github.com/infernokun/Full-Tab-Viewer-For-Firefox-"
+            target="_blank">Source
+            Code</a>
+          <a class="project-button demo" href="https://github.com/infernokun/Full-Tab-Viewer-For-Firefox-#readme"
+            target="_blank">Download</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <a routerLink="/project-ttg">
+          <img class="project-image game1" src="/assets/images/game1.png" alt="">
+          <div class="project-title">
+            <h1>Unity Project Telltale Style Game</h1>
+          </div>
+        </a>
+        <div class="project-description">
+          <p>Work in progress point and click style game. Merely for learning purposes. No plan for any
+            kind of release.</p>
+          <a class="project-button demo" routerLink="/project-ttg">Coming One Day!</a>
+        </div>
+      </div>
+    </div>
+    <div #showAll class="show-more" (click)="pushAllProjects($event)">
+      <i class="fa fa-caret-down"></i><br>
+      <p>Show All</p>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="title">
+      <h1>Skills</h1>
+    </div>
+    <div class="content">
+      <div class="main-carousel carousel" data-flickity='{
+                      "cellAlign": "center",
+                      "autoPlay": 2000,
+                      "wrapAround": true,
+                      "draggable": true}'>
+        <div class="skill-set carousel-cell">
+          <i class="fa fa-code"></i><br>
+          <div class="skill-title">Computer Programming</div>
+          <ul>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>MYSQL</li>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+          </ul>
+        </div>
+        <div class="skill-set carousel-cell">
+          <i class="fa fa-microchip"></i><br>
+          <div class="skill-title">Computer Hardware</div>
+          <p>Tons of experience dealing with computer hardware and a deep understanding of computer
+            architecture. I have build multiple computers and always strive to learn more about
+            different configurations of computers. Understanding the jobs of each component from the CPU
+            to the RAM.</p>
+        </div>
+
+        <div class="skill-set">
+          <i class="fa fa-microchip"></i><br>
+          <div class="skill-title">Computer Networking</div>
+          <p>Experience working full-time as a Network Install Technician. In this role I deal with
+            configurations of network switches from Cisco and HP. Along with switch installations, I
+            provided wireless and wired ethernet solutions for IP phones, cameras, speakers and various
+            other devices.</p>
+        </div>
+
+        <div class="skill-set">
+          <i class="fa fa-desktop"></i><br>
+          <div class="skill-title">Computer Software</div>
+          <p>I deal with tons of software on a daily basis. Navigating Windows, Linux to even individual
+            pieces of software like IDEs, Photoshop, Sony Vegas, etc. I have worked with software in
+            many different areas like Dev Tools, Photo Editing, Video Editing, 3D Modeling, and more.
+          </p>
+        </div>
+
+        <div class="skill-set">
+          <i class="fa fa-terminal"></i><br>
+          <div class="skill-title">Computer Security</div>
+          <p>Knowledge of the aspects of security in the cyber security domain. The importance of
+            accounting for user permissions and accounting for potential vulnerabilities. I also have a
+            strong knowledge of Linux and various important terminal commands.</p>
+        </div>
+
+        <div class="skill-set">
+          <i class="fa fa-cloud"></i><br>
+          <div class="skill-title">Cloud Computing</div>
+          <p>Utilizing remote access to instances on networks or using the AWS platform. I also have
+            experience with using the network tools for web hosting with MYSQL or PHP.</p>
+        </div>
+
+        <div class="skill-set">
+          <i class="fa fa-link"></i><br>
+          <div class="skill-title">Web Development</div>
+          <p>Knowledge of Frontend and Backend Web Development using HTML, CSS, JS, or PHP along with
+            MYSQL. While I prefer Backend, I am currently working on expanding my knowledge to JS
+            frameworks like React or VueJS.</p>
+        </div>
+
+        <div class="skill-set">
+          <i class="fa fa-mobile"></i><br>
+          <div class="skill-title">Mobile Computing</div>
+          <p>Experience working with Android and Apple application development using Java and Swift.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="title">
+      <h1>About Me</h1>
+    </div>
+    <div class="content">
+      <h1>Javoris "InfernoKun"</h1>
+      <h2>Computer Science</h2>
+      <div id="me2">
+        <p>Hello I am Javoris! I graduated my undergrad studies in May of 2021 with a <span>Bachelor's of
+            Science in Computer Science</span> @ <span>Auburn
+            University at Montgomery</span>. Computer hardware, networking, programming, and software
+          are my bread and butter. I love programming and learning lots of new technologies. Along with
+          that, I mess around with my home network router and switches to help me be lazy with RDP
+          sessions, casting/streaming video, etc.</p>
+
+        <p>Currently, I lean more towards <span>backend programming</span>. I enjoy working with MYSQL
+          databases and data driven algorithms. I am always looking for new skills to aquire and to apply
+          my current skills in any area. I do appreciate and understand frontend, but there's just
+          something about Java/PHP that you don't get with HTML/CSS.</p>
+
+        <p>Part-time, I work in <span>Cyber Security</span>. I get to train my technical skills in this
+          role constantly and it is loads of fun.</p>
+
+        <p>In my free time I love to game. Looking at mechanics in a programmatic sense is also something I
+          enjoy. I work on concepts in <span>Unity and Unreal Engine</span> when I can.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section youtube" id="youtube">
+    <div class="title">
+      <h1>YouTube</h1>
+    </div>
+    <div class="content">
+      <img id="prof-pic" src="/assets/images/prof.jpg" alt="">
+      <h1>InfernoKun YouTube Channel</h1>
+      <p><span>22,500+</span> Subscriptions</p>
+      <p><span>7.4 Million</span> Views</p>
+      <p class="etc">I am mostly inactive, but I am proud of these accomplishments through my brand.</p>
+      <p><a href="https://youtube.com/c/InfernoKun" target="_blank">Check Out The Channel</a></p>
+    </div>
+  </section>
+
+  <section class="section email" id="connect">
+    <div class="title">
+      <h1>Connect With Me</h1>
+    </div>
+    <div class="content">
+      <p>Feel free to email me for any business inquiries.</p>
+      <a href="mailto:infernokun@outlook.com">infernokun@outlook.com</a>
+
+      <div class="bottom-icons">
+        <a href="https://github.com/infernokun" target="_blank"><i class="bottom-icon fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/javoris-brown-41699b146/" target="_blank"><i
+            class="bottom-icon fab fa-linkedin"></i></a>
+        <a href="https://youtube.com/c/Infernokun" target="_blank"><i class="bottom-icon fab fa-youtube"></i></a>
+        <a href="https://twitter.com/InfernoKun" target="_blank"><i class="bottom-icon fab fa-twitter-square"></i></a>
+      </div>
+    </div>
+  </section>
+</body>

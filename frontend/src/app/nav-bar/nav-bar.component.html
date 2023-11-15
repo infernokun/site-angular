@@ -1,0 +1,29 @@
+<header class="header">
+  <nav class="nav">
+    <div class="navigation container">
+      <div class="nav-logo">
+        <a routerLink="/"><img src="/assets/images/logo1.png" alt=""></a>
+      </div>
+      <div class="menu">
+        <div class="top-nav">
+          <div class="close">
+            <i class="fas fa-times"> </i>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
+          <li class="nav-item" id="nav-project"><a href="#projects" class="nav-link" id="nav-project-link">Projects <i
+                class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu" *ngFor="let project of projects">
+              <a class="dropdown-link" routerLink="{{project.link}}">{{project.name}}</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="/#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="/#youtube" class="nav-link">YouTube</a></li>
+          <li class="nav-item"><a href="/#connect" class="nav-link">Connect With Me</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars hamburger"></i>
+    </div>
+  </nav>
+</header>
