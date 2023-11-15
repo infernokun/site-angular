@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 import Flickity from 'flickity';
 
@@ -7,7 +7,7 @@ import Flickity from 'flickity';
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss']
 })
-export class ContentComponent implements AfterViewInit {
+export class ContentComponent implements OnInit, AfterViewInit {
   private flickityInstance: any;
 
   private projectListHTML: string[] = [];
@@ -15,6 +15,9 @@ export class ContentComponent implements AfterViewInit {
   @ViewChild('showAll') showAll!: ElementRef;
 
   constructor(private el: ElementRef) { }
+
+  ngOnInit(): void {
+  }
 
   ngAfterViewInit() {
     // Initialize Flickity after the view has been initialized

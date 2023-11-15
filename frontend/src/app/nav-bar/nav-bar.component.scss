@@ -69,6 +69,11 @@
   transition: all 300ms ease-in-out;
 }
 
+a.active {
+  background-color: rgb(247, 57, 57);
+  border-radius: 0.3rem;
+}
+
 
 @media only screen and (max-width: 768px) {
   .close,
